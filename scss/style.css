@@ -1,0 +1,71 @@
+#app {
+    align-items: center;
+    display: flex;
+    font-family: Roboto, sans-serif;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  .wrapper {
+    background: #C4C4C4;
+    width: 661px;
+    min-height: 763px;
+    padding: 62px 77px;
+  }
+  
+  #inputId {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 48px;
+    padding-left: 10px;
+  }
+  
+  .autocomplete {
+    display: flex;
+    flex-direction: column;
+    height: 220px;
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  
+  .button-autocomplete {
+    text-align: start;
+    border: 2px solid #000;
+    font-size: 35px;
+    background: #E3E3E3;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .button-autocomplete:hover {
+    background: #31b9f3;
+    transition: background-color 0.5s ease;
+  }
+  
+  .result-item {
+    border: 1px solid #000;
+    background: #E27BEB;
+    padding: 5px 10px;
+    font-size: 24px;
+    position: relative;
+  }
+  
+  .close-button {
+    background: url("../img/Vector 7.svg") no-repeat, url("../img/Vector 8.svg") no-repeat;
+    border: none;
+    top: 25%;
+    left: 90%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    transition: all 0.3s ease;
+    transform: scale(0.8);
+  }
+  .close-button:hover {
+    cursor: pointer;
+    filter: brightness(300%) drop-shadow(5px 5px 5px black);
+    transform: scale(1);
+  }
+  .close-button:active {
+    transform: scale(0.95);
+  }
